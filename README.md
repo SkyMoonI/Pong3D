@@ -1,6 +1,4 @@
 # pong
  self project
 
-
-https://github.com/user-attachments/assets/86b88206-5f89-405d-95a7-5ea4a1c6357f
-
+https://github.com/user-attachments/assets/ff5a679d-6df8-4573-b42c-97ba9a2d53e1
