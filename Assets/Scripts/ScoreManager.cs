@@ -20,7 +20,7 @@ public class ScoreManager : MonoBehaviour
 
 	void ScoreTextChange()
 	{
-		ScoreText.text = player1.playerScore.ToString() + " - " + player2.playerScore.ToString();
+		ScoreText.text = player2.playerScore.ToString() + " - " + player1.playerScore.ToString();
 	}
 
 }

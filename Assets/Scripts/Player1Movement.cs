@@ -16,18 +16,20 @@ public class Player1Movement : MonoBehaviour
 
 	void Move()
 	{
-		if (Input.GetKey(KeyCode.W))
+		if (transform.position.y < 5f && transform.position.y > -3f)
 		{
-			Vector3 movement = new Vector3(0, 1, 0) * Time.deltaTime * playerSpeed;
-			transform.Translate(movement);
+			if (Input.GetKey(KeyCode.W))
+			{
+				Vector3 movement = new Vector3(0, 1, 0) * Time.deltaTime * playerSpeed;
+				transform.Translate(movement);
 
+			}
+			else if (Input.GetKey(KeyCode.S))
+			{
+				Vector3 movement = new Vector3(0, -1, 0) * Time.deltaTime * playerSpeed;
+				transform.Translate(movement);
+			}
 		}
-		else if (Input.GetKey(KeyCode.S))
-		{
-			Vector3 movement = new Vector3(0, -1, 0) * Time.deltaTime * playerSpeed;
-			transform.Translate(movement);
-		}
-
 
 	}
 

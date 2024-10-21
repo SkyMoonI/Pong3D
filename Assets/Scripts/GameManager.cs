@@ -22,16 +22,22 @@ public class GameManager : MonoBehaviour
 			return _instance;
 		}
 	}
-	BotManagement botManager;
 
+	void Update()
+	{
+		if (Input.GetKey(KeyCode.M))
+		{
+			SceneManager.LoadScene("StartScene"); // Load scene by name
+		}
+	}
 
 	public void LoadGameSceneTwoPlayer()
 	{
-		SceneManager.LoadScene("GameScene"); // Load scene by name
+		SceneManager.LoadScene("TwoPlayers"); // Load scene by name
 	}
 	public void LoadGameSceneOnePlayer()
 	{
-		SceneManager.LoadScene("GameScene"); // Load scene by name
+		SceneManager.LoadScene("OnePlayer"); // Load scene by name
 	}
 
 	void Awake()
